@@ -69,8 +69,8 @@ class OrderServiceStaticTest extends Specification {
         source   | currency || type
         "APP"    | "CNY"    || 1
         "APP"    | "USD"    || 1
-        "WAP"    | ""       || 2
-        "ONLINE" | ""       || 3
+//        "WAP"    | ""       || 2
+//        "ONLINE" | ""       || 3
     }
 
     /**
@@ -94,8 +94,8 @@ class OrderServiceStaticTest extends Specification {
         where: "表格方式验证订单属性转换结果"
         order                || desc
         new OrderVO(type: 1) || "App端订单"
-        new OrderVO(type: 2) || "H5端订单"
-        new OrderVO(type: 3) || "PC端订单"
+//        new OrderVO(type: 2) || "H5端订单"
+//        new OrderVO(type: 3) || "PC端订单"
     }
 
 }
